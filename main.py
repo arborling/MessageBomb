@@ -33,7 +33,7 @@ def send_message():
 
     n = 10
     while n != 0:
-        win32gui.SendMessage(handle, msg, 0, 0)
+        win32gui.SendMessage(handle, 770, 0, 0)
         win32gui.SendMessage(handle, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
         n = n-1
 
